@@ -31,7 +31,6 @@ yarn start
 		If you have a field in your rows that isn't in the columns, that's fine, it just won't show up in the grid. 
 
 - For styling I used styled-components, though I focused more on functionality than style. Companies will usually have their own specific way of styling components, such as a specific Sass implementation or something from their style guide platform.
-- 
 
 # TODO - things I would add/change with more time
 - If more functionality is needed I would split Grid.js into multiple files and components. 
@@ -39,4 +38,5 @@ yarn start
 - Also given more requirements/time I would adjust the behavior when the user enters a lot of text into a field. Should the column width expand? Should it wrap?
 - Exception Handling: I would assume exception handling would be performed in the container code for this component, probably based on an environment variable. Normally debug environments give the developer the specifics and production environments provide something more user-friendly.
 - Typescript: I ran out of time for this exercise but I would implement types for the component, integrating with whatever compile process the application uses. 
-
+- Additional complexity may merit a switch from useState to useReducer.
+- More refactoring for performance, if complexity increases maybe look at memoization for some things, for example.
